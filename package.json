@@ -4,9 +4,10 @@
   "description": "cashtrack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch ./src/server.ts"
   },
-  "author": "",
+  "author": "dev cicilini",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
@@ -18,6 +19,7 @@
     "eslint-plugin-import-helpers": "^1.3.1",
     "eslint-plugin-prettier": "^5.1.3",
     "prettier": "^3.2.5",
+    "tsx": "^4.7.2",
     "typescript": "^5.4.4"
   },
   "dependencies": {
