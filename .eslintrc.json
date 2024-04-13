@@ -43,6 +43,7 @@
                     "ignoreCase": true
                 }
             }
-        ]
+        ],
+        "semi": ["error", "always"]
     }
 }
