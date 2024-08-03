@@ -8,7 +8,6 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: 'cash-track-backend'
       MONGO_INITDB_ROOT_PASSWORD: 'Ctrack5659'
-
     ports:
       - '27017:27017'
     networks:

@@ -1,4 +1,4 @@
-import 'dotend/config'
+import 'dotenv/config';
 import express, { json } from 'express';
 
 import { setupMongo } from './database';
