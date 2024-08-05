@@ -4,8 +4,10 @@
   "description": "cashtrack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch ./src/server.ts"
+    "lint": "eslint ./ --fix",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "build": "tsc",
+    "start": "node ./build/src/server.js"
   },
   "author": "cicilini",
   "license": "ISC",
@@ -26,6 +28,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.3.1"
+    "mongoose": "^8.3.1",
+    "ts-node-dev": "^2.0.0"
   }
 }
