@@ -1,12 +1,12 @@
 
 type categoryProps = {
     title: string,
-    _id: string,
+    _id?: string,
     color: string
 }
 
 export class Category {
-    public _id: string;
+    public _id?: string;
     public title: string;
     public color: string;
 
