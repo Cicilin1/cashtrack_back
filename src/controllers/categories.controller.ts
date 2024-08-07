@@ -5,10 +5,7 @@ import { CategoryModel } from '../database/schemas/category.schema';
 import { CreateCategoryDTO } from '../dtos/categories.dto';
 
 export class CategoriesController { 
-    async create(
-        req: Request<unknown, unknown, CreateCategoryDTO>, 
-        res: Response,
-    ) {   
+    async create(req: Request<unknown, unknown, CreateCategoryDTO>, res: Response,) {   
         const { title, color} = req.body
 
         const repository = new CategoryRepository(CategoryModel)
