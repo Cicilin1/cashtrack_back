@@ -19,9 +19,7 @@ export class CategoriesService {
             color,
         }); 
 
-
-        const createdCategory = await this.categoryRepository.create(category)
-
+        const createdCategory = await this.categoryRepository.create(category);
         return createdCategory;
     }
 }

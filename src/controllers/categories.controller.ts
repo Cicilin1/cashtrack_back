@@ -12,7 +12,7 @@ export class CategoriesController {
         next: NextFunction,
     ) {
 
-        try {
+        try {   
             const { title, color } = req.body
 
             const repository = new CategoryRepository(CategoryModel)
@@ -20,7 +20,7 @@ export class CategoriesController {
 
             const result = await service.create({ title, color });
 
-            return res.status(201).json(result)
+            return res.status(StatusCodes.CREATED).json(result)
         } catch (err) {
             next(err);
         }
